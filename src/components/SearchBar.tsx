@@ -3,6 +3,9 @@ import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { InputGroup } from 'react-bootstrap';
+import search from '../assets/image/search.svg'
+import Image from 'react-bootstrap/Image';
 
 function SearchBar() {
     return (
@@ -10,40 +13,58 @@ function SearchBar() {
             <Container className="mt-4">
                 <Form>
                     <Row>
-                        <Col lg="1">
-                            Projet
-                        </Col>
-                        <Col>
+                        <Col className='p-0'>
                             <Form.Control
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
                                 type="text"
-                                placeholder="Ville, quartier, code postal"
+                                placeholder="Type de bien"
                             />
                         </Col>
-                        <Col>
+                        <Col className='p-0'>
                             <Form.Control
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
                                 type="text"
-                                placeholder="Type de bien (appartement, maison, etc.)"
+                                placeholder="Localisation"
 
                             />
                         </Col>
-                        <Col>
+                        <Col className='p-0'>
                             <Form.Control
-                                type="number"
-                                placeholder="Prix minimum"
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                type="text"
+                                placeholder="Prix min/max"
 
                             />
                         </Col>
-                        <Col>
+                        <Col className='p-0'>
                             <Form.Control
-                                type="number"
-                                placeholder="Prix maximum"
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                type="text"
+                                placeholder="Surface"
 
                             />
                         </Col>
-                        <Col>
-                            <Button variant="primary">
-                                Rechercher
-                            </Button>
+                        <Col className='p-0'>
+                            <Form.Control
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                type="text"
+                                placeholder="Pièces"
+
+                            />
+                        </Col>
+                        <Col className='p-0'>
+                            <InputGroup className="mb-3">
+                                <Form.Control
+                                    style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                    placeholder="+ de critéres"
+                                    aria-label="Recipient's username"
+                                    aria-describedby="basic-addon2"
+                                />
+                                <Button style={{ borderRadius: 30, backgroundColor: '#394460', border: 0, fontSize: 12 }}>
+                                    <Image src={search} height="20"></Image>
+                                    Rechercher
+                                </Button>
+                            </InputGroup>
                         </Col>
                     </Row>
                 </Form>
