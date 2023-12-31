@@ -14,11 +14,9 @@ function NavBar() {
     return (
         <>
             <Navbar className="mt-4" expand="lg">
-
-          <Navbar.Brand href="#home">
-          <Image src={orpi} height="80"></Image>
-            </Navbar.Brand>
-
+                <Navbar.Brand href="#home">
+                    <Image src={orpi} height="80"></Image>
+                </Navbar.Brand>
                 <Container>
                     <Nav className="me-auto">
                         <Nav.Link className='m-3' style={{ fontSize: 14 }} as={NavLink} to="/buy">
@@ -42,13 +40,13 @@ function NavBar() {
                     </Nav>
                     <Form className="d-flex m-2">
                         <Form.Control
-                            style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                            style={{ borderBottomLeftRadius: 20, borderTopLeftRadius: 20, borderTop: 10, borderRight: 10, borderLeft: 10, borderBottomRightRadius: 0 }}
                             type="search"
                             placeholder="Rechercher..."
-                            className="border-radius "
+                            className="border-radius pr-0"
                             aria-label="Search"
                         />
-                        <Button style={{ borderRadius: 30, backgroundColor: '#53D5BB', border: 0, fontSize: 12,}}>
+                        <Button style={{ borderRadius: 30, backgroundColor: '#53D5BB', border: 0, fontSize: 12, }}>
                             <Image src={search} height="20"></Image>
                         </Button>
                     </Form>

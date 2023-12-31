@@ -5,15 +5,43 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import Image from 'react-bootstrap/Image';
 import orpi from '../assets/image/orpi.svg'
+import { Link } from 'react-router-dom';
+import enveloppeWhite from '../assets/image/email-envelope.svg'
+import { Button, InputGroup } from 'react-bootstrap';
+import linkedin from '../assets/image/linkedin.svg'
+import facebook from '../assets/image/facebook.svg'
+import instagram from '../assets/image/instagram.svg'
 
 function Footer() {
     return (
-        <footer className='text-center text-lg-start text-muted'>
-            <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-                <Container className='me-5 d-none d-lg-block justify-content-center'>
-                  
-                </Container>
-            </section>
+        <footer className='text-center text-lg-start text-muted mt-5'>
+            <Container style={{ backgroundColor: '#53D5BB' }} className='d-none d-lg-block justify-content-center' fluid>
+                <div className="d-flex justify-content-around">
+                    <div className="p-2" style={{ backgroundColor: '#F5C36D' }}>
+                        <Image src={enveloppeWhite} className="p-2" height="40"></Image>
+                    </div>
+                    <Form className="d-flex align-items-center">
+                        <Form.Label className='text-white p-2' style={{ fontSize: 14 }}>NEWSLETTER</Form.Label>
+                        <InputGroup>
+                            <Form.Control
+                                style={{ borderTopLeftRadius: 30, borderBottomLeftRadius: 30, border: 0 }}
+                                placeholder="Votre e-mail*"
+                                aria-label="Recipient's username"
+                                aria-describedby="basic-addon2"
+                                className='p-2'
+                            />
+                            <Button style={{ fontSize: 14, backgroundColor: '#53D5BB', borderColor: "white", borderTopRightRadius: 30, borderBottomRightRadius: 30 }} id="button-addon2">
+                                Suivez-nous
+                            </Button>
+                        </InputGroup>
+                    </Form>
+                    <div className="p-2" style={{ backgroundColor: '#F5C36D' }}>
+                        <Image src={linkedin} className="p-2" height="40"></Image>
+                        <Image src={facebook} className="p-2" height="40"></Image>
+                        <Image src={instagram} className="p-2" height="40"></Image>
+                    </div>
+                </div>
+            </Container>
 
             <section className='py-5'>
                 <Container className='text-center text-md-start mt-5'>
@@ -21,95 +49,96 @@ function Footer() {
                         <Col md="3" lg="4" xl="3" className='mx-auto mb-4'>
                             <Image src={orpi} height="200"></Image>
                         </Col>
-
                         <Col md="2" lg="2" xl="2" className='mx-auto mb-4'>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/buy" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Acheter
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Louer
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Gestion
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Notre agence
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Contact
-                                </a>
+                                </Link>
                             </p>
                         </Col>
-
                         <Col md="3" lg="2" xl="2" className='mx-auto mb-4'>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Estimer
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Investisseur
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Entreprise
-                                </a>
+                                </Link>
                             </p>
 
                         </Col>
                         <Col md="3" lg="2" xl="2" className='mx-auto mb-4'>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Nos honoraires
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Mentions légales
-                                </a>
+                                </Link>
                             </p>
                             <p>
-                                <a href='#!' className='text-reset'>
+                                <Link to="/" className='fw-bold text-dark text-decoration-none ' style={{ fontSize: 14 }}>
                                     Contact
-                                </a>
+                                </Link>
                             </p>
 
-                            <p>
+                            <p style={{ fontSize: 14 }}>
                                 Nous contacter au mardi au samedi
                                 <br></br>
                                 9h30-12h30 / 14h-19h
                             </p>
                         </Col>
                         <Col md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-                            <p>
+                            <p style={{ fontSize: 12 }}>
 
                                 Téléphone: 01 64 27 83 34
                             </p>
-                            <p>
+                            <p style={{ fontSize: 14 }} className='fw-bold text-dark '>
 
-                                DES RECLAMATIONS
+                                DES RCLAMATIONS ?
                             </p>
                             <Form>
                                 <Form.Group controlId="exampleForm.ControlInput1">
-                                    <Form.Control type="text" className="rounded-input" placeholder="Votre e-mail*" />
-                                    <FloatingLabel controlId="floatingTextarea2" label="Comments" className="mt-3">
+                                    <Form.Control style={{ borderRadius: 30, borderColor: '#53D5BB' }} type="text" className="rounded-input" placeholder="Votre e-mail*" />
+                                    <FloatingLabel controlId="floatingTextarea2" label="Commentaire" className="mt-3">
                                         <Form.Control
                                             as="textarea"
                                             placeholder="Leave a comment here"
-                                            style={{ height: '100px' }}
+                                            style={{ height: '100px', borderRadius: 30, borderColor: '#53D5BB' }}
                                         />
                                     </FloatingLabel>
+                                    <div className='text-center mt-5'>
+                                        <Button style={{ backgroundColor: '#53D5BB', border: 0, borderRadius: 30 }}> ENVOYER</Button>
+                                    </div>
                                 </Form.Group>
                             </Form>
                         </Col>

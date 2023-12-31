@@ -14,7 +14,7 @@ function Buy() {
   return (
     <>
       <h3>Acheter / Louer</h3>
-      <h3 style={{color: 'gray'}}>Votre futur bien</h3>
+      <h3 style={{ color: 'gray' }}>Votre futur bien</h3>
       <Container className="justify-content-center align-items-center h-100 mt-5">
         <SearchBar />
       </Container>
@@ -35,14 +35,14 @@ function Buy() {
             )
           })}
           <Pagination className="justify-content-center">
-            <Pagination.Item active>{1}</Pagination.Item>
-            <Pagination.Item>{2}</Pagination.Item>
-            <Pagination.Item>{3}</Pagination.Item>
-            <Pagination.Next />
+            <Pagination.Item linkStyle={{ backgroundColor: '#53D5BB', borderColor: '#53D5BB', borderRadius: 10, color: 'white', margin: 3 }} active>{1}</Pagination.Item>
+            <Pagination.Item linkStyle={{ borderColor: '#53D5BB', borderRadius: 10, color: '#53D5BB', margin: 3 }} >{2}</Pagination.Item>
+            <Pagination.Item linkStyle={{ borderColor: '#53D5BB', borderRadius: 10, color: '#53D5BB', margin: 3 }}>{3}</Pagination.Item>
+            <Pagination.Next linkStyle={{ borderColor: '#53D5BB', borderRadius: 10, color: '#53D5BB', margin: 3 }} />
           </Pagination>
         </Row>
         <Col lg="6" >
-          <Image style={{ borderRadius: 50}} src={map} height="700"></Image>
+          <Image style={{ borderRadius: 50 }} src={map} height="700"></Image>
           <div className='text-center mt-3'>
             <Button style={{ borderRadius: 50, backgroundColor: '#394460', border: 0, fontSize: 12 }} variant="primary">
               Prendre rendez-vous avec nos agents

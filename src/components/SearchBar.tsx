@@ -15,50 +15,53 @@ function SearchBar() {
                     <Row>
                         <Col className='p-0'>
                             <Form.Control
-                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                style={{ borderBottomLeftRadius: 20, borderTopLeftRadius: 20, borderTop: 10, borderRight: 10, borderLeft: 10, borderBottomRightRadius: 0 }}
                                 type="text"
                                 placeholder="Type de bien"
+                                className='pr-0 shadow-sm  bg-white'
                             />
                         </Col>
                         <Col className='p-0'>
                             <Form.Control
-                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}
                                 type="text"
                                 placeholder="Localisation"
+                                className='pr-0 shadow-sm  bg-white'
 
                             />
                         </Col>
                         <Col className='p-0'>
                             <Form.Control
-                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}
                                 type="text"
                                 placeholder="Prix min/max"
-
+                                className='pr-0 shadow-sm  bg-white'
                             />
                         </Col>
                         <Col className='p-0'>
                             <Form.Control
-                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}
                                 type="text"
                                 placeholder="Surface"
-
+                                className='pr-0 shadow-sm  bg-white'
                             />
                         </Col>
                         <Col className='p-0'>
                             <Form.Control
-                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                style={{ borderTop: 10, borderRight: 10, borderLeft: 10, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}
                                 type="text"
                                 placeholder="Pièces"
-
+                                className='pr-0 shadow-sm  bg-white'
                             />
                         </Col>
                         <Col className='p-0'>
                             <InputGroup className="mb-3">
                                 <Form.Control
-                                    style={{ borderTop: 10, borderRight: 10, borderLeft: 10 }}
+                                    style={{ borderTop: 10, borderRight: 10, borderLeft: 10, borderBottomRightRadius: 0, borderBottomLeftRadius: 0 }}
                                     placeholder="+ de critéres"
                                     aria-label="Recipient's username"
                                     aria-describedby="basic-addon2"
+                                    className='pr-0 shadow-sm  bg-white'
                                 />
                                 <Button style={{ borderRadius: 30, backgroundColor: '#394460', border: 0, fontSize: 12 }}>
                                     <Image src={search} height="20"></Image>
