@@ -22,7 +22,7 @@ function Buy() {
         <Row>
           {buyHomeDetails.map((buyHomeDetail: IHomeBuyProps) => {
             return (
-              <Col lg="5" className="m-3">
+              <Col lg="5" className="m-3" key={buyHomeDetail.id}>
                 <CardHouseBuy
                   price={buyHomeDetail.price}
                   city={buyHomeDetail.city}
