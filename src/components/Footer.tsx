@@ -124,7 +124,7 @@ function Footer() {
                             </p>
                             <p style={{ fontSize: 14 }} className='fw-bold text-dark '>
 
-                                DES RCLAMATIONS ?
+                                DES RÉCLAMATIONS ?
                             </p>
                             <Form>
                                 <Form.Group controlId="exampleForm.ControlInput1">
